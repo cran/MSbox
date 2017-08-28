@@ -1,0 +1,17 @@
+b4d2cb93d96b882a559fd83aef3ce1cd *DESCRIPTION
+b75eea3db0bd70edf89a04f440651587 *NAMESPACE
+6b58499288e055499a4e666c989b9043 *R/Adduct.R
+32d0aaf6e5adc3d082c00a9e77a17a22 *R/Element_Isotope.R
+b3e5dd2ad9813e27be4b7c24086bd549 *R/Ion_Mass.R
+037a7b9e78276028bbfee85a8a00575b *R/Molecular_Mass.R
+25737fb501efb2a86c7afdeab935bcd3 *R/Tanimoto.R
+5273b24831f95ab07fba1ffb2a615696 *R/contaminant.R
+009b631efffb8e0f940d7e5e13edfb3c *R/ppm.R
+c87ff5e64623277dccdf2899cf38fe54 *R/sysdata.rda
+ad20641e534ff515b7137c31ce424fd6 *man/E_iso.Rd
+a82c6fca4f29419e1f44c87541a03130 *man/M_mass.Rd
+be5fc5e8561bcc6d730873d9b7274abb *man/adduct.Rd
+a5582e4e8c22dd6be86da2c4faa4b409 *man/contam.Rd
+e9b0f9210633f91d14bbcc91d17631b1 *man/mz.Rd
+62dac32a168c255f60fca88e8638b06a *man/ppm.Rd
+42cd9f274c023d675dc474f07087dc4c *man/tanimoto.Rd
