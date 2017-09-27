@@ -7,14 +7,14 @@
 adduct(F, mode = c("+", "-"))
 }
 \arguments{
-\item{F}{chemical formula, must be written in capital letters}
+\item{F}{chemical formula, case insensitive}
 
 \item{mode}{ionization mode, either positive '+' or negative '-'}
 }
 \description{
-calculate common adduct ions in pos or neg ion mode
+calculate common adduct ions in positive or negative ion mode
 }
 \examples{
-adduct('C1H4',mode = '-')
-adduct('C1H4',mode = '+')
+adduct('C1H4', mode = '-')
+adduct('C1h4', mode = '+')
 }
