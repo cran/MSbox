@@ -1,7 +1,7 @@
 Package: MSbox
 Type: Package
 Title: Mass Spectrometry Tools
-Version: 1.0
+Version: 1.1
 Author: Yonghui Dong
 Maintainer: Yonghui Dong <yonghui.dong@gmail.com>
 Description: Common mass spectrometry tools described in John Roboz (2013) <doi:10.1201/b15436>. It allows checking element
@@ -17,6 +17,6 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1
 NeedsCompilation: no
-Packaged: 2017-09-27 16:17:49 UTC; Dong
+Packaged: 2018-03-16 07:17:49 UTC; Dong
 Repository: CRAN
-Date/Publication: 2017-09-27 16:31:01 UTC
+Date/Publication: 2018-03-16 07:52:07 UTC

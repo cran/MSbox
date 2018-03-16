@@ -4,12 +4,14 @@
 \alias{ppm}
 \title{mass accuracy}
 \usage{
-ppm(m, t)
+ppm(m, t, lazy = TRUE)
 }
 \arguments{
 \item{m}{measured m/z}
 
 \item{t}{theoretical m/z}
+
+\item{lazy}{if lazy input is allowed}
 }
 \description{
 calculate the mass accuracy of measured m/z. lazy input allowed.
