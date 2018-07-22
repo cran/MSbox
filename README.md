@@ -4,12 +4,12 @@
 [![CRAN downloads](http://cranlogs.r-pkg.org/badges/grand-total/MSbox)](https://cran.r-project.org/package=MSbox)
 
 
-Common mass spectrometry tools for minimalist MS user (short function names, less paramers, and ease to use).
+Common mass spectrometry tools for minimalist MS users.
 
 # Installation 
 
 ```r
-## stable version v1.0
+## stable version v1.1
 install.packages('MSbox')
 ```
 
@@ -25,23 +25,31 @@ E_iso('Carbon') # element full name, case insensitive
 E_iso('carBon') # element full name, case insensitive
 ```
 
-2. Calculate monoisitopic mass
+2. Get formula
+
+```r
+formula('malic aicd')
+```
+
+3. Calculate monoisitopic mass
 
 example:
 
 ```r
-M_mass('C7H6O1') # case insensitive
+mass('C7H6O1') # case insensitive
+mass(c('K1', 'C5H8', 'nA20')) # vector input
 ```
 
-3. Calculate exact m/z values
+4. Calculate exact m/z values
 
 example:
 
 ```r
 mz('C7H7O4', z = -1) # case insensitive
+mz(c('C7H7O4', 'c1'), z = -1) # vector input
 ```
 
-4. Calculate the mass accuracy of measured m/z
+5. Calculate the mass accuracy of measured m/z
 
 examples:
 
@@ -52,7 +60,7 @@ ppm(155.03383, .03388, lazy = F) # lazy input disabled
 ppm(155.03384, mz('C7H7O4', z = 1)) # with ion formula
 ```
 
-5. Calculate isotope labelled molecular mass
+6. Calculate isotope labelled molecular mass
 
 example
 
@@ -60,7 +68,7 @@ example
 Iso_mass(F = 'C7H6O4', iso = '[13]C2[2]H3') # Two 13C and three 2H are labled. Case insensitive.
 ```
 
-6. Calculate isotope labelled m/z
+7. Calculate isotope labelled m/z
 
 example
 
@@ -68,7 +76,7 @@ example
 Iso_mz(F = 'C7H6O4', iso = '[13]C2[2]H3', z = 1) # Two 13C and three 2H are labled. Case insensitive.
 ```
 
-7. Check if an m/z value originates from possible contaminant
+8. Check if an m/z value originates from possible contaminant
 
 examples
 
