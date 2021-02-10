@@ -1,21 +1,8 @@
-# MSbox
-
-[![CRAN status](http://www.r-pkg.org/badges/version/MSbox)](https://cran.r-project.org/package=MSbox) 
-[![CRAN downloads](http://cranlogs.r-pkg.org/badges/grand-total/MSbox)](https://cran.r-project.org/package=MSbox)
-
+# MSbox2
 
 Common mass spectrometry tools for minimalist MS users.
 
-# Installation 
-
-```r
-## stable version
-install.packages('MSbox')
-```
-
 # Functions
-
-This is a minimal version of R package MSbox. For complete version with more functions, please download and install it from [Github](https://github.com/YonghuiDong/MSbox)
 
 1. Check element isotopes
 
@@ -40,8 +27,10 @@ describe(c('malic acid', 'citric acid', 'tartaric acid'), representation = "smil
 example:
 
 ```r
-mass('C7H6O1') # case insensitive
-mass(c('K1', 'C5H8', 'nA20')) # vector input
+mass('c7h6O1') # case insensitive: elements are seperated by numbers.
+mass('C7H6O', caseSensitive = T) # case sensitive: elements are seperated by upper case letters. The number of the element can be missing if it is 1.
+mass(c('K1', 'C5H8', 'nA1')) # vector input
+mass(c('K1', 'C5H8', 'Na'), caseSensitive = T) # vector input
 ```
 
 4. Calculate exact m/z values
@@ -49,8 +38,10 @@ mass(c('K1', 'C5H8', 'nA20')) # vector input
 example:
 
 ```r
-mz('C7H7O4', z = -1) # case insensitive
-mz(c('C7H7O4', 'c1'), z = -1) # vector input
+mz('c7h6O1', z = -1) # case insensitive: elements are seperated by numbers.
+mz('C7H6O', z = -1, caseSensitive = T) # case sensitive: elements are seperated by upper case letters. The number of the element can be missing if it is 1.
+mz(c('C5H8', 'c3h3o1'), z = 1) # vector input
+mz(c('C5H8', 'C3H3O'), z = 1, caseSensitive = T) # vector input
 ```
 
 5. Calculate the mass accuracy of measured m/z
