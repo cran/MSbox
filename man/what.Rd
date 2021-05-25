@@ -4,10 +4,10 @@
 \alias{what}
 \title{search for m/z in from the idiom metabolomics database}
 \usage{
-what(mz, mode = NULL, ppm = 5, useDB = "HMDB")
+what(myMZ, mode = NULL, ppm = 5, useDB = "HMDB")
 }
 \arguments{
-\item{mz}{m/z values}
+\item{myMZ}{m/z values}
 
 \item{mode}{ionization mode, either positive '+' or negative '-'}
 
@@ -19,7 +19,7 @@ what(mz, mode = NULL, ppm = 5, useDB = "HMDB")
 tentative metabolite identification based on m/z value search
 }
 \examples{
- a = what(133.014, mode = '-', ppm = 10)
+a = what(133.014, mode = '-', ppm = 10)
 }
 \author{
 Yonghui Dong
